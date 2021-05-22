@@ -1,26 +1,3 @@
-'''def winner(c):
-    return c%2==0
-def startgame(l,string):
-    count=0
-    for v in range(len(l)):
-        if l[v] in string:
-            ind=string.index(l[v])
-            count+=1
-            #replace gap in place of that substring
-            string=string[:ind]+' '+string[(len(l[v])+ind):]
-    return string,count
-s=int(input())
-while s>0:
-    n=input()
-    x=int(input())
-    l=[]
-    for i in range(x):
-        v=input()
-        if v in n:
-            l.append(v)
-    n,c=startgame(l,n)
-    print('Tracy') if winner(c) else print('Teddy')
-    s-=1'''
 from tkinter import *
 from tkinter import messagebox
 o=Tk()
@@ -68,6 +45,6 @@ e2=Entry(o)
 e2.place(x=330,y=130)
 b1=Button(o,text="display string",bg='yellow',command=pri).place(x=440,y=80)
 b2=Button(o,text="display words",bg='yellow',command=dict_words).place(x=440,y=130)
-b3=Button(o,text="winner",bg='light blue',font='bold',command=winner).place(x=360,y=300)
+b3=Button(o,text="RESULT",bg='light blue',font='bold',command=winner).place(x=360,y=300)
 
 
